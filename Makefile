@@ -1,11 +1,12 @@
 CC=g++
 DEPS=main.cxx
 CFLAGS=-Wall
+EXECUTABLE=sysutil
 
 all: $(DEPS)
-		$(CC) $(CFLAGS) $(DEPS) -o sysutil
+		$(CC) $(CFLAGS) $(DEPS) -o $(EXECUTABLE)
 
-install:
+install: $(EXECUTABLE)
 	cp sysutil /usr/bin
 	chmod +x /usr/bin/sysutil
 
