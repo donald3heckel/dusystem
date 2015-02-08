@@ -52,8 +52,8 @@ int main()
 	}
 	
 	if(input == '2'){
-		cout << ("\n\nupgraded thine mighty directories of thy packages...");
 		system("sudo apt-get upgrade");
+		cout << ("\n\nupgraded thine mighty directories of thy packages...");
 		cout << ("\n\nDone. All set.");
 	}
 	
